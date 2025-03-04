@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-main{
+  background-image: url('/images/bg-main.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0px 0px 150px 150px;
+  padding-bottom: 200px;
+}
+
+.after-h1 {
+  background-image: url('/images/caption-dec.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 50px;
+  left: 30%;
+  height: 10px;
+  width: 200px;
+}
+
+.cat-bg{
+  background-image: url('/images/cta-bg.jpg');
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 500px;
+  border-radius: 50px;
+
+}
+
+@layer utilities {
+  .bg-footer {
+    @apply bg-[url('/images/footer-bg.jpg')] object-cover rounded-t-full
+  }
+}
